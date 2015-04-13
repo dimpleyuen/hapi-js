@@ -5,7 +5,8 @@ var server = new Hapi.Server();
 server.connection({
   host: '0.0.0.0',
   port: 8080,
-  routes: {cors: true} //means its cool if someone wants to send ajax request from outside
+  routes: {cors: true} 
+  //means its cool if someone wants to send ajax request from outside
 });
 
 //extends hapi with a plugin, which will take care of the routes for us
